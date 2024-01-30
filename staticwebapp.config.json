@@ -1,0 +1,6 @@
+{
+  "mimeTypes": {
+    ".js": "application/javascript",
+    ".ts": "application/x-typescript"
+  }
+}

@@ -1,0 +1,32 @@
+ul.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+ul.social li {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+
+ul.social li:hover,
+ul.social li:active {
+  border-radius: 8px;
+  border: 1px solid #475467;
+  background: #f8fafc;
+}
+
+ul.social li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

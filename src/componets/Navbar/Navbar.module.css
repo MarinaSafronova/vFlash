@@ -1,0 +1,151 @@
+.navigation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.navigation a.primary {
+  height: 40px;
+}
+
+.brand {
+  text-decoration: none;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.brand .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 29.556px;
+  height: 29.556px;
+  border-radius: 5.911px;
+  background: #101828;
+  margin-right: 6px;
+}
+
+.brand span {
+  font-size: 23.644px;
+  font-style: normal;
+  font-weight: 900;
+  color: #101828;
+  line-height: 37.831px;
+  letter-spacing: -0.473px;
+}
+.btns {
+  margin-left: auto;
+}
+.menu ul {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+.menu li {
+  list-style-type: none;
+  margin: 0 20px;
+}
+.menu li a {
+  font-family: "Nunito";
+  color: #475467;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  line-height: 19.6px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.menu li a:hover {
+  color: #101828;
+}
+
+.hamburger {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  background: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  z-index: 5;
+  margin-left: 8px;
+  position: relative;
+}
+
+.hamburger:hover {
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768.9px) {
+  .hamburger {
+    display: flex;
+  }
+  .menu {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    padding-top: 16px;
+    top: 56px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-color: #ffffff;
+    z-index: 10;
+  }
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .menu li {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .menu li:hover {
+    background:  #F8FAFC;
+  }
+  .menu li a {
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    padding: 15px 16px;
+  }
+  .menu li:hover {
+    background-color: #eee;
+  }
+  .menu.expanded {
+    display: flex;
+  }
+  .menuBtns {
+    border-top: 1px solid #EAECF0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 16px;
+    margin-top: auto;
+    gap: 8px;
+  }
+
+  .menuBtns a {
+    width: 100%;
+  }
+}
